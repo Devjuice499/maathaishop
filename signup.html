@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maathai | sign up</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec98d1f9a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js" async
+        integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
+        crossorigin="anonymous">
+        
+</script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="./firebase.js"></script>
+    <script src="./signup.js"></script>
+
+
+</head>
+<body class="relative py-20 bg-gray-100">
+    <img class="hidden lg:block absolute top-0 left-0 mt-16" src="zeus-assets/icons/dots/blue-dot-left-bars.svg" alt="">
+    <img class="hidden lg:block absolute bottom-0 right-0 mb-20" src="zeus-assets/icons/dots/yellow-dot-right-shield.svg" alt="">
+    <div class="container px-4 mx-auto">
+      <div class="max-w-sm mx-auto rounded-lg text-center">
+        <div class="flex items-center justify-center">
+            <img src="https://i.ibb.co/R3cXh1j/Copy-of-Modern-Gradient-Brand-Logo-7.png" alt="" class="w-40 h-full object-contain">
+        </div>
+        <h3 class="mb-12 text-3xl font-semibold font-heading">Create new account</h3>
+        <form action="#">
+          <div class="flex flex-wrap -mx-2">
+            <div class="relative w-full lg:w-1/2 px-2 flex flex-wrap mb-6">
+              <input class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded" type="text" id="firstname" placeholder="John" spellcheck="false" data-ms-editor="true">
+              <span class="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-gray-100 text-gray-500 text-xs">First name</span>
+            </div>
+            <div class="relative w-full lg:w-1/2 px-2 flex flex-wrap mb-6">
+              <input class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded" type="text" id="lastname" placeholder="Smith" spellcheck="false" data-ms-editor="true">
+              <span class="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-gray-100 text-gray-500 text-xs">Last name</span>
+            </div>
+          </div>
+          <div class="relative flex flex-wrap mb-6">
+            <input class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded" type="email" id="email" placeholder="e.g jeff@jmworlds.com">
+            <span class="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-gray-100 text-gray-500 text-xs">Email address</span>
+          </div>
+          <div class="relative flex flex-wrap mb-6">
+            <input class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded" type="password" id="password" placeholder="********">
+            <span class="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-gray-100 text-gray-500 text-xs">Password</span>
+          </div>
+         
+          <button onclick="register()"   class="w-full inline-block py-4 mb-4 text-sm text-white font-medium leading-normal bg-yellow-500 hover:bg-yellow-600 rounded transition duration-200">Get Started</button>
+        </form>
+        <p class="text-sm text-gray-500">
+          <span>Already have an account?</span>
+          <a class="text-red-400 font-semibold hover:underline" href="/login.html?#">Sign in</a>
+        </p>
+      </div>
+    </div>
+</body>

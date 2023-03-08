@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 13 Pro</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec98d1f9a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js" async
+        integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
+        crossorigin="anonymous">
+        
+</script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script src="./firebase.js"></script>
+   
+    <script src="./header.js"></script>
+    <script src="./script.js"></script>
+
+
+</head>
+<body class="pt-12 pb-24 bg-white overflow-hidden">
+    <ul class="flex flex-wrap px-4 md:mx-16 mb-12 md:mb-16 items-center">
+      <li class="mr-6">
+        <a class="flex items-center text-sm font-medium text-gray-400 hover:text-gray-500" href="#">
+          <span>Home</span>
+          <svg class="ml-6" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.150291 0.898704C-0.0500975 0.692525 -0.0500975 0.359292 0.150291 0.154634C0.35068 -0.0507836 0.674443 -0.0523053 0.874831 0.154634L3.7386 3.12787C3.93899 3.33329 3.93899 3.66576 3.7386 3.8727L0.874832 6.84594C0.675191 7.05135 0.35068 7.05135 0.150292 6.84594C-0.0500972 6.63976 -0.0500972 6.30652 0.150292 6.10187L2.49888 3.49914L0.150291 0.898704Z" fill="currentColor"></path>
+          </svg>
+        </a>
+      </li>
+      <li class="mr-6">
+        <a class="flex items-center text-sm font-medium text-gray-400 hover:text-gray-500" href="#">
+          <span>Store</span>
+          <svg class="ml-6" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.150291 0.898704C-0.0500975 0.692525 -0.0500975 0.359292 0.150291 0.154634C0.35068 -0.0507836 0.674443 -0.0523053 0.874831 0.154634L3.7386 3.12787C3.93899 3.33329 3.93899 3.66576 3.7386 3.8727L0.874832 6.84594C0.675191 7.05135 0.35068 7.05135 0.150292 6.84594C-0.0500972 6.63976 -0.0500972 6.30652 0.150292 6.10187L2.49888 3.49914L0.150291 0.898704Z" fill="currentColor"></path>
+          </svg>
+        </a>
+      </li>
+      <li><a class="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#">Apple iPhone 12 PRO</a></li>
+    </ul>
+    <div class="relative container px-4 mx-auto">
+      <div class="hidden md:flex md:absolute left-0 top-0 mt-20 min-w-max px-4 text-center md:flex-col items-center justify-center">
+        <a class="inline-block sm:mb-12 mr-4 sm:mr-0 transform -rotate-90 sm:transform-none hover:text-darkBlueGray-400" href="#">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.54064 7.21015C1.18719 7.59662 0.615928 7.59662 0.265087 7.21015C-0.087058 6.82369 -0.0896663 6.19929 0.265087 5.81282L5.36206 0.289847C5.71421 -0.0966173 6.28416 -0.0966172 6.63892 0.289847L11.7359 5.81282C12.088 6.19785 12.088 6.82369 11.7359 7.21015C11.3824 7.59662 10.8112 7.59662 10.4603 7.21015L5.99853 2.68073L1.54064 7.21015Z" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a class="h-30 block mb-4 mr-2 sm:mr-0 border border-gray-100 rounded-3xl" href="#">
+          <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder1.png" alt="">
+        </a>
+        <a class="hidden sm:block h-30 mb-4 mr-2 sm:mr-0 border border-gray-100 rounded-3xl" href="#">
+          <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder2.png" alt="">
+        </a>
+        <a class="hidden sm:block h-30 mb-4 mr-2 sm:mr-0 rounded-3xl border-2 border-blueGray-500" href="#">
+          <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder4.png" alt="">
+        </a>
+        <a class="h-30 block mb-4 sm:mb-12 mr-4 sm:mr-0 border border-gray-100 rounded-3xl" href="#">
+          <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder3.png" alt="">
+        </a>
+        <a class="inline-block transform -rotate-90 sm:transform-none hover:text-darkBlueGray-400" href="#">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.4594 0.289849C10.8128 -0.0966154 11.3841 -0.0966154 11.7349 0.289849C12.0871 0.676313 12.0897 1.30071 11.7349 1.68718L6.63794 7.21015C6.28579 7.59662 5.71584 7.59662 5.36108 7.21015L0.264109 1.68718C-0.0880364 1.30215 -0.0880363 0.676312 0.264109 0.289848C0.617558 -0.096616 1.18882 -0.0966159 1.53966 0.289848L6.00147 4.81927L10.4594 0.289849Z" fill="currentColor"></path>
+          </svg>
+        </a>
+      </div>
+      <h1 class="mb-24 text-center text-6xl md:text-7xl lg:text-8xl font-heading font-medium">Apple iPhone 12 Pro (256GB) - Silver</h1>
+      <div class="flex flex-wrap -mx-4 mb-14 md:mb-24">
+        <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+          <div class="relative w-full md:w-3/4 ml-auto mb-16">
+            <div class="w-4/6 mx-auto">
+              <img src="uinel-assets/images/ecommerce-product-info/ph-phone1.png" alt="">
+            </div>
+            <button class="absolute top-1/2 left-0 hover:text-darkBlueGray-400 -mt-20 md:-mt-0">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.21015 10.4594C7.59661 10.8128 7.59661 11.3841 7.21015 11.7349C6.82369 12.0871 6.19929 12.0897 5.81282 11.7349L0.289847 6.63794C-0.0966172 6.28579 -0.0966172 5.71584 0.289847 5.36108L5.81282 0.264109C6.19785 -0.0880364 6.82369 -0.0880364 7.21015 0.264109C7.59662 0.617558 7.59662 1.18882 7.21015 1.53966L2.68073 6.00147L7.21015 10.4594Z" fill="currentColor"></path>
+              </svg>
+            </button>
+            <button class="absolute top-1/2 right-0 hover:text-darkBlueGray-400 -mt-20 md:-mt-0">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.289849 1.54064C-0.0966146 1.18719 -0.0966145 0.615928 0.28985 0.265087C0.676314 -0.087058 1.30071 -0.0896664 1.68718 0.265087L7.21015 5.36206C7.59662 5.71421 7.59662 6.28416 7.21015 6.63892L1.68718 11.7359C1.30215 12.088 0.676312 12.088 0.289848 11.7359C-0.0966159 11.3824 -0.0966159 10.8112 0.289848 10.4603L4.81927 5.99853L0.289849 1.54064Z" fill="currentColor"></path>
+              </svg>
+            </button>
+            <div class="md:hidden mt-16 px-4 text-center flex items-center justify-center">
+              <a class="inline-block mr-4 transform -rotate-90" href="#">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.54064 7.21015C1.18719 7.59662 0.615928 7.59662 0.265087 7.21015C-0.087058 6.82369 -0.0896663 6.19929 0.265087 5.81282L5.36206 0.289847C5.71421 -0.0966173 6.28416 -0.0966172 6.63892 0.289847L11.7359 5.81282C12.088 6.19785 12.088 6.82369 11.7359 7.21015C11.3824 7.59662 10.8112 7.59662 10.4603 7.21015L5.99853 2.68073L1.54064 7.21015Z" fill="black"></path>
+                </svg>
+              </a>
+              <a class="h-30 block mr-2 border border-gray-100 rounded-3xl" href="#">
+                <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder1.png" alt="">
+              </a>
+              <a class="h-30 block mr-2 border border-gray-100 rounded-3xl" href="#">
+                <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder2.png" alt="">
+              </a>
+              <a class="h-30 block mr-2 rounded-3xl border-2 border-blueGray-500" href="#">
+                <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder4.png" alt="">
+              </a>
+              <a class="h-30 block mr-4 border border-gray-100 rounded-3xl" href="#">
+                <img class="h-full w-full" src="uinel-assets/images/ecommerce-product-info/placeholder3.png" alt="">
+              </a>
+              <a class="inline-block transform -rotate-90" href="#">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.4594 0.289849C10.8128 -0.0966154 11.3841 -0.0966154 11.7349 0.289849C12.0871 0.676313 12.0897 1.30071 11.7349 1.68718L6.63794 7.21015C6.28579 7.59662 5.71584 7.59662 5.36108 7.21015L0.264109 1.68718C-0.0880364 1.30215 -0.0880363 0.676312 0.264109 0.289848C0.617558 -0.096616 1.18882 -0.0966159 1.53966 0.289848L6.00147 4.81927L10.4594 0.289849Z" fill="black"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="relative xl:-left-8 w-full md:w-3/4 xl:w-4/6 md:ml-auto text-center">
+            <p class="mb-8 text-sm text-gray-400">Share it</p>
+            <div>
+              <a class="inline-block" href="#">
+                <img src="uinel-assets/elements/ecommerce-product-info/facebook.svg" alt="">
+              </a>
+              <a class="inline-block mx-2" href="#">
+                <img src="uinel-assets/elements/ecommerce-product-info/instagram.svg" alt="">
+              </a>
+              <a class="inline-block" href="#">
+                <img src="uinel-assets/elements/ecommerce-product-info/twitter.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 px-4 xl:pl-20">
+          <div class="max-w-xl mb-6">
+            <p class="flex items-start mb-8">
+              <span class="flex items-center text-6xl text-blue-500 font-heading font-medium">
+                <span class="mr-2 text-xl">$</span>
+                <span>235.00</span>
+              </span>
+              <span class="relative left-4 text-gray-300 font-heading font-medium line-through">$244.90</span>
+            </p>
+            <p class="text-lg text-gray-400">The nulla commodo, commodo eros a lor, tristique lectus. Lorem sad 128 GB silver.</p>
+          </div>
+          <div class="flex mb-6 items-center">
+            <div class="inline-flex mr-4">
+              <button class="mr-1">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7.91679H12.4167L10 0.416779L7.58333 7.91679H0L6.18335 12.3168L3.81668 19.5835L10 15.0835L16.1834 19.5835L13.8167 12.3168L20 7.91679Z" fill="#C1C9D3"></path>
+                </svg>
+              </button>
+              <button class="mr-1">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7.91679H12.4167L10 0.416779L7.58333 7.91679H0L6.18335 12.3168L3.81668 19.5835L10 15.0835L16.1834 19.5835L13.8167 12.3168L20 7.91679Z" fill="#C1C9D3"></path>
+                </svg>
+              </button>
+              <button class="mr-1">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7.91679H12.4167L10 0.416779L7.58333 7.91679H0L6.18335 12.3168L3.81668 19.5835L10 15.0835L16.1834 19.5835L13.8167 12.3168L20 7.91679Z" fill="#C1C9D3"></path>
+                </svg>
+              </button>
+              <button class="mr-1">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7.91679H12.4167L10 0.416779L7.58333 7.91679H0L6.18335 12.3168L3.81668 19.5835L10 15.0835L16.1834 19.5835L13.8167 12.3168L20 7.91679Z" fill="#C1C9D3"></path>
+                </svg>
+              </button>
+              <button>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7.91679H12.4167L10 0.416779L7.58333 7.91679H0L6.18335 12.3168L3.81668 19.5835L10 15.0835L16.1834 19.5835L13.8167 12.3168L20 7.91679Z" fill="#C1C9D3"></path>
+                </svg>
+              </button>
+            </div>
+            <span class="text-md text-gray-400">4.59</span>
+          </div>
+          <div class="mb-8">
+            <h4 class="mb-3 font-heading font-medium">
+              <span>Color:</span>
+              <span class="text-gray-400">Silver</span>
+            </h4>
+            <button class="inline-flex items-center justify-center p-1 rounded-full border border-gray-300">
+              <div class="w-6 h-6 rounded-full bg-white"></div>
+            </button>
+            <button class="inline-flex items-center justify-center p-1 rounded-full border border-transparent">
+              <div class="w-6 h-6 rounded-full bg-orange-800"></div>
+            </button>
+            <button class="inline-flex items-center justify-center p-1 rounded-full border border-transparent">
+              <div class="w-6 h-6 rounded-full bg-blue-900"></div>
+            </button>
+            <button class="inline-flex items-center justify-center p-1 rounded-full border border-transparent">
+              <div class="w-6 h-6 rounded-full bg-yellow-500"></div>
+            </button>
+          </div>
+          <div class="mb-7">
+            <h4 class="mb-4 font-heading font-medium">Memory storage</h4>
+            <button class="inline-flex items-center justify-center h-12 w-24 rounded-full border-2 border-gray-100 hover:border-gray-200 border-opacity-80 text-gray-400 font-medium">64GB</button>
+            <button class="inline-flex items-center justify-center h-12 w-24 rounded-full border-2 border-gray-100 hover:border-gray-200 border-opacity-80 text-gray-400 font-medium">128GB</button>
+            <button class="relative inline-flex items-center justify-center h-12 w-24 rounded-full border-2 border-gray-100 border-opacity-80 text-blue-500 font-medium">
+              <span>256GB</span>
+              <div class="absolute bottom-0 w-12 py-px transform translate-y-1/2 bg-blue-500 rounded-full"></div>
+            </button>
+          </div>
+          <div class="mb-10">
+            <h4 class="mb-3 font-heading font-medium">Qty:</h4>
+            <input class="w-24 px-3 py-2 text-center bg-blue-50 border-2 border-blue-400 outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl" type="text" placeholder="1" spellcheck="false" data-ms-editor="true">
+          </div>
+          <div class="flex flex-wrap -mx-2 mb-12">
+            <div class="w-full md:w-2/3 px-2 mb-2 md:mb-0"><a class="block py-4 px-2 leading-8 font-heading font-medium tracking-tighter text-xl text-white text-center bg-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 hover:bg-blue-600 rounded-xl" href="#">Add to basket</a></div>
+            <div class="w-full md:w-1/3 px-2">
+              <a class="flex items-center justify-center w-full py-4 px-2 leading-8 font-heading font-medium tracking-tighter text-xl text-center bg-gray-50 focus:ring-2 focus:ring-gray-200 focus:ring-opacity-50 hover:bg-opacity-60 rounded-xl" href="#">
+                <span class="mr-2">Wishlist</span>
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.3235 20.1324L2.52488 10.8515C1.75232 10.0706 1.24237 9.06367 1.06728 7.97339C0.8922 6.88311 1.06086 5.76477 1.54936 4.7768V4.7768C1.91837 4.03089 2.45739 3.3843 3.12201 2.89033C3.78663 2.39635 4.55781 2.06911 5.37203 1.93558C6.18626 1.80205 7.0202 1.86605 7.80517 2.1223C8.59013 2.37855 9.30364 2.81972 9.88691 3.40946L11.3235 4.86204L12.7601 3.40946C13.3434 2.81972 14.0569 2.37855 14.8419 2.1223C15.6269 1.86605 16.4608 1.80205 17.275 1.93558C18.0892 2.06911 18.8604 2.39635 19.525 2.89033C20.1897 3.3843 20.7287 4.03089 21.0977 4.7768V4.7768C21.5862 5.76477 21.7549 6.88311 21.5798 7.97339C21.4047 9.06367 20.8947 10.0706 20.1222 10.8515L11.3235 20.1324Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-9 border-t border-gray-100">
+        <div class="relative max-w-5xl pb-9 mx-auto border-b border-gray-100">
+          <div class="absolute bottom-0 left-0 w-2/6 bg-blue-500 py-px"></div>
+          <a class="inline-block w-full md:w-auto mb-4 md:mb-0 md:mr-20 lg:mr-36 text-blue-500 text-lg font-heading font-medium" href="#">Shipping &amp; returns</a><a class="inline-block w-full md:w-auto mb-4 md:mb-0 md:mr-20 lg:mr-36 text-lg font-heading font-medium" href="#">Product details</a><a class="inline-block w-full md:w-auto text-lg font-heading font-medium" href="#">Reviews (78)</a>
+        </div>
+      </div>
+    </div>
+    <div class="col16 -pvs">
+        <section class="card -oh _fw -rad4">
+            <header class="row _no-g -fw-nw -j-bet -i-ctr -phm -mh-48px" style="color:#FFFFFF;background:#e61601;">
+                <div class="cola -df -i-ctr -oh col5"><svg viewBox="0 0 24 24" class="ic -fsh0 -mrs" width="32" height="32">
+                    <use xlink:href="https://www.jumia.co.ke/assets_he/images/i-global.f1ccc3fb.svg#flash-sales">
+                    </use>
+                </svg><h2 class="-m -fs20 -elli">Flash Sales</h2></div><div class="col6 -mra -fs20 -tac">
+                    Time Left: <time class="-b -ws-p" datetime="2022-03-28T09:00:00+03:00" data-cd="">
+                        18h : 28m : 36s</time></div><div class="col -df -j-end -fsh0"
+                        ><a href="/flash-sales/" class="-df -i-ctr -upp -m -mls -pvxs">
+                            See All<svg style="fill:#FFFFFF;" viewBox="0 0 24 24" class="ic" width="24" height="24">
+                                <use xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.ffb2c8f5.svg#arrow-right">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </header>
+                <div class="crs-w _main -phxs">
+                    <div class="crs row _no-g -fw-nw _6cl-4cm -pvxs">
+                        <div class="itm col">
+                            
+                            <article class="prd _box _hvr">
+                            <a class="core" href="/dove-restoring-care-body-lotion-with-coconut-oil-almond-500ml-60745840.html" data-id="DO627ST02W1WYNAFAMZ" data-name="Restoring Care Body Lotion With Coconut Oil &amp; Almond 500ml" data-price="4.96" data-brand="Dove" data-category="Health &amp; Beauty/Beauty &amp; Personal Care/Personal Care/Skin Care/Body/Moisturizers/Lotions" data-dimension23="76698" data-dimension26="" data-dimension27="" data-dimension28="1" data-dimension37="0" data-dimension43="CFS" data-dimension44="0" data-position="1" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true">
+                                <img data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/04/854706/1.jpg?1124" src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/04/854706/1.jpg?1124" class="img" width="185" height="185" alt="Dove Restoring Care Body Lotion With Coconut Oil &amp; Almond 500ml">
+                                <div class="name">
+                                    Dove Restoring Care Body Lotion With Coconut Oil &amp; Almond 500ml
+                                </div>
+                                <div class="prc">
+                                    KSh 625
+                                </div>
+                                <div class="stk">
+                                    55 items left
+                                    <div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 84.61538461538461%,#c7c7cd 84.61538461538461%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/exe-all-purpose-flour-2kg-43658696.html" data-id="EX715OT15HLS2NAFAMZ" data-name="All Purpose Flour 2Kg" data-price="1.06" data-brand="Exe" data-category="Grocery/Food Cupboard/Sugar &amp; Flour/Wheat Flour/Small Packs" data-dimension23="" data-dimension26="400" data-dimension27="4.5" data-dimension28="1" data-dimension37="0" data-dimension43="BF21_UN5|BFEST21_UN4|BLOCK_COD|CFS|COL_300|CP_MT30|CP_MT36|CP_MT37|CP_MT50|CP_MT54|CP_MT61|CP_MT81|CP_MT86|CP_MT90|DOW_104|DOW_300|FDYJE|GAM0|GTU|INF_21|INF_90|INV_CLEAR|JBM|JMALL|RSBVG|TOP|UND_6|UND_7|UND_8|UND_9" data-dimension44="0" data-position="2" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/69/685634/1.jpg?1545" src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/69/685634/1.jpg?1545" class="img" width="185" height="185" alt="Exe All Purpose Flour 2Kg"><div class="name">Exe All Purpose Flour 2Kg</div><div class="prc" data-oprc="KSh 170">KSh 134</div><div class="tag _dsct">21%</div><div class="stk">121 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 60.5%,#c7c7cd 60.5%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/amana-pishori-5kg-47979137.html" data-id="AM090OT17KVX2NAFAMZ" data-name="Pishori - 5kg" data-price="6.97" data-brand="Amana" data-category="Grocery/Food Cupboard/Grains &amp; Rice/Pishori Rice/Large Packs" data-dimension23="" data-dimension26="1308" data-dimension27="4.4" data-dimension28="1" data-dimension37="0" data-dimension43="CFS|CP_MT36|CP_MT54|CP_MT61|CP_MT81|CP_MT86|CP_MT90|DOW_104|DOW_200|GAM0|INF_44|INV_CLEAR|JBM|RSBVG|TOP|UND_6|UND_7|UND_8" data-dimension44="0" data-position="3" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/73/197974/1.jpg?0562" src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/73/197974/1.jpg?0562" class="img" width="185" height="185" alt="Amana Pishori - 5kg"><div class="name">Amana Pishori - 5kg</div><div class="prc" data-oprc="KSh 1,133">KSh 879</div><div class="tag _dsct">22%</div><div class="stk">491 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 98.2%,#c7c7cd 98.2%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/freepods3-true-wireless-stereo-earbuds-black-oraimo-mpg383821.html" data-id="OR019EA1ILO14NAFAMZ" data-name="FreePods3 True Wireless Stereo Earbuds - Black" data-price="22.12" data-brand="Oraimo" data-category="Phones &amp; Tablets/Accessories/Bluetooth Headsets" data-dimension23="86707" data-dimension26="8" data-dimension27="4.9" data-dimension28="1" data-dimension37="0" data-dimension43="FDYJE|JG_2|JMALL|TBOOST|TW22|TW_01|TW_04" data-dimension44="0" data-position="4" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/91/710184/1.jpg?7266" src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/91/710184/1.jpg?7266" class="img" width="185" height="185" alt="Oraimo FreePods3 True Wireless Stereo Earbuds - Black"><div class="name">Oraimo FreePods3 True Wireless Stereo Earbuds - Black</div><div class="prc" data-oprc="KSh 5,608">KSh 2,790</div><div class="tag _dsct">50%</div><div class="stk">100 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 74.07407407407408%,#c7c7cd 74.07407407407408%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/generic-m3-bluetooth-wireless-earphone-earbuds-for-samsung-iphone-apple-xiaomi-huawei-vivo-iosandroid-black-45998242.html" data-id="GE840EA0EGM8YNAFAMZ" data-name="M3 Bluetooth Wireless Earphone Earbuds For Samsung IPhone Apple Xiaomi Huawei Vivo IOS/Android- Black" data-price="5.15" data-brand="Generic" data-category="Phones &amp; Tablets/Accessories/Bluetooth Headsets" data-dimension23="87412" data-dimension26="67" data-dimension27="4.1" data-dimension28="1" data-dimension37="0" data-dimension43="BF21_UN1|CP_MT75|CP_MT93|DOW_11|FDYJE|GAM0|JG_2|TBOOST|TW22|TW_01|TW_04|UND_6|UND_7|WCS" data-dimension44="0" data-position="5" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/24/289954/1.jpg?6662" src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/24/289954/1.jpg?6662" class="img" width="185" height="185" alt="Generic M3 Bluetooth Wireless Earphone Earbuds For Samsung IPhone Apple Xiaomi Huawei Vivo IOS/Android- Black"><div class="name">Generic M3 Bluetooth Wireless Earphone Earbuds For Samsung IPhone Apple Xiaomi Huawei Vivo IOS/Android- Black</div><div class="prc" data-oprc="KSh 1,443">KSh 649</div><div class="tag _dsct">55%</div><div class="stk">194 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 97%,#c7c7cd 97%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/sandisk-32gb-ultra-microsd-card-sdhc-10177201.html" data-id="SA949EL0649V1NAFAMZ" data-name="32GB Ultra MicroSD Card (SDHC)" data-price="5.15" data-brand="Sandisk" data-category="Computing/Computer Accessories/Memory Cards" data-dimension23="4394" data-dimension26="830" data-dimension27="4.4" data-dimension28="0" data-dimension37="0" data-dimension43="BF21_UN4|BFEST21_UN2|Boost|COL_130|COL_132|COL_60|CP_20|CP_MT19|CP_MT23|CP_MT65|Camp_20|Camp_5|DOW_110|DOW_3|INF_8|JMALL|TBOOST|TOP|TW22|TW_01" data-dimension44="0" data-position="6" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/10/277101/1.jpg?2938" src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/10/277101/1.jpg?2938" class="img" width="185" height="185" alt="Sandisk 32GB Ultra MicroSD Card (SDHC)"><div class="name">Sandisk 32GB Ultra MicroSD Card (SDHC)</div><div class="prc" data-oprc="KSh 799">KSh 649</div><div class="tag _dsct">19%</div><div class="stk">12 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 66.66666666666666%,#c7c7cd 66.66666666666666%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/von-vadz0002k-portable-water-dispenser-black-45408597.html" data-id="VO144PB1BDOO6NAFAMZ" data-name="VADZ0002K, Portable Water Dispenser - Black" data-price="6.30" data-brand="VON" data-category="Home &amp; Office/Tools &amp; Home Improvement/Kitchen &amp; Bath Fixtures/Kitchen Fixtures/Water Dispensers &amp; Coolers/Water Dispenser Replacement Parts" data-dimension23="1933" data-dimension26="149" data-dimension27="4.5" data-dimension28="1" data-dimension37="0" data-dimension43="CP_MT100|CP_MT72|GAM0|INF_51|INF_55|JMALL|TBOOST|TW22|UND_6" data-dimension44="0" data-position="7" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/79/580454/1.jpg?2739" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="VON VADZ0002K, Portable Water Dispenser - Black"><div class="name">VON VADZ0002K, Portable Water Dispenser - Black</div><div class="prc" data-oprc="KSh 1,195">KSh 795</div><div class="tag _dsct">33%</div><div class="stk">197 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 98.5%,#c7c7cd 98.5%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/ulefone-note-7-6.1-1gb-16gb-3500mah-dual-sim-black-27527492.html" data-id="UL031EL0HJP6KNAFAMZ" data-name="Note 7, 6.1&quot;, 1GB + 16GB, 3500mAh, (Dual SIM) - Black" data-price="50.74" data-brand="Ulefone" data-category="Phones &amp; Tablets/Mobile Phones/Smartphones/Android Phones" data-dimension23="13874" data-dimension26="1836" data-dimension27="4" data-dimension28="1" data-dimension37="0" data-dimension43="BFEST21_UN1|Boost|COL_129|COL_130|COL_142|COL_214|CP_MT15|CP_MT16|CP_MT18|CP_MT56|Camp_20|Camp_21|DOW_1|DOW_110|DOW_200|FDYJE|JA21_UN2|JBM|JMALL|TBOOST|TW22|TW_01" data-dimension44="0" data-position="8" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/29/472572/1.jpg?7071" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="Ulefone Note 7, 6.1&quot;, 1GB + 16GB, 3500mAh, (Dual SIM) - Black"><div class="name">Ulefone Note 7, 6.1", 1GB + 16GB, 3500mAh, (Dual SIM) - Black</div><div class="prc" data-oprc="KSh 9,999">KSh 6,399</div><div class="tag _dsct">36%</div><div class="stk">108 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 90%,#c7c7cd 90%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/vision-plus-vp8832db-32-digital-hd-led-tv-black-free-wall-mount-29629250.html" data-id="VI799EA035FV8NAFAMZ" data-name="VP8832DB - 32&quot; Digital HD LED TV - Black + FREE WALL MOUNT" data-price="95.15" data-brand="Vision Plus" data-category="Electronics/Television &amp; Video/Televisions/Digital TVs" data-dimension23="2212" data-dimension26="499" data-dimension27="4.3" data-dimension28="1" data-dimension37="0" data-dimension43="BF21_UN2|BFEST21_UN2|COL_4|CP_MT11|CP_MT31|CP_MT35|CP_MT67|Camp_20|DOW_110|GAM0|INF_86|INF_92|INF_95|JBM|JMALL|MLP2|MLP6|Merch_6|TBOOST|TW22" data-dimension44="0" data-position="9" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/05/292692/1.jpg?3524" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="Vision Plus VP8832DB - 32&quot; Digital HD LED TV - Black + FREE WALL MOUNT"><div class="name">Vision Plus VP8832DB - 32" Digital HD LED TV - Black + FREE WALL MOUNT</div><div class="prc" data-oprc="KSh 17,499">KSh 11,999</div><div class="tag _dsct">31%</div><div class="stk">195 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 97.5%,#c7c7cd 97.5%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/edifier-x3-wireless-headphone-bluetooth-5.0-headset-earpiecenoise-cancellingtouch-controipx5-waterproof-39234025.html" data-id="ED036EA0UZGV1NAFAMZ" data-name="X3 Wireless Headphone, Bluetooth 5.0 Headset Earpiece,Noise Cancelling,Touch Contro,IPX5 Waterproof" data-price="12.36" data-brand="Edifier" data-category="Phones &amp; Tablets/Accessories/Bluetooth Headsets" data-dimension23="82109" data-dimension26="533" data-dimension27="4.4" data-dimension28="1" data-dimension37="0" data-dimension43="BF21_UN1|BFEST21_UN1|Boost|COL_212|CP_MT100|CP_MT23|CP_MT31|CP_MT50|CP_MT56|CP_MT75|CP_MT93|DOW_11|FDYJE|GAM0|JA21_UN2|JBM|JG_2|JMALL|TBOOST|TOP|TW22|TW_01|TW_04|WCS" data-dimension44="0" data-position="10" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/52/043293/1.jpg?0313" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="Edifier X3 Wireless Headphone, Bluetooth 5.0 Headset Earpiece,Noise Cancelling,Touch Contro,IPX5 Waterproof"><div class="name">Edifier X3 Wireless Headphone, Bluetooth 5.0 Headset Earpiece,Noise Cancelling,Touch Contro,IPX5 Waterproof</div><div class="prc" data-oprc="KSh 3,527">KSh 1,559</div><div class="tag _dsct">56%</div><div class="stk">198 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 99%,#c7c7cd 99%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/portable-wireless-bluetooth-speaker-black-tg-mpg303715.html" data-id="TG833EA1DYFI6NAFAMZ" data-name="Portable Wireless Bluetooth Speaker-Black" data-price="5.15" data-brand="T&amp;G" data-category="Electronics/Home Audio/Speakers/Bluetooth Speakers" data-dimension23="52140" data-dimension26="1645" data-dimension27="4.2" data-dimension28="1" data-dimension37="0" data-dimension43="Boost|COL_105|COL_123|COL_130|CP_10|CP_14|CP_MT100|CP_MT15|CP_MT19|CP_MT24|CP_MT31|CP_MT75|CP_MT93|Camp_20|Camp_21|FDYJE|INF_15|INF_24|JA21_UN4|JG_2|MLP15|MLP22|TBOOST|TOP|TW22|TW_03|TW_04|UND_6|UND_8|UND_9|WCS" data-dimension44="0" data-position="11" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/83/907582/1.jpg?4011" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="T&amp;G Portable Wireless Bluetooth Speaker-Black"><div class="name">T&amp;G Portable Wireless Bluetooth Speaker-Black</div><div class="prc" data-oprc="KSh 1,371">KSh 649</div><div class="tag _dsct">53%</div><div class="stk">189 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 94.5%,#c7c7cd 94.5%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/50-inch-frameless-4k-uhd-android-tv-1.5gb-ram-8gb-rom-5068us-vitron-mpg312713.html" data-id="VI505EA17ZKD8NAFAMZ" data-name="50&quot; Inch FRAMELESS 4K UHD Android TV 1.5GB RAM, 8GB ROM - 5068US" data-price="331.47" data-brand="Vitron" data-category="Electronics/Television &amp; Video/Televisions/Smart TVs" data-dimension23="5258" data-dimension26="5" data-dimension27="4.8" data-dimension28="0" data-dimension37="0" data-dimension43="BF21_UN2|CP_MT31|CP_MT35|DOW_11|TBOOST|TW22|TW_03" data-dimension44="0" data-position="12" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/73/882844/1.jpg?1386" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="Vitron 50&quot; Inch FRAMELESS 4K UHD Android TV 1.5GB RAM, 8GB ROM - 5068US"><div class="name">Vitron 50" Inch FRAMELESS 4K UHD Android TV 1.5GB RAM, 8GB ROM - 5068US</div><div class="prc" data-oprc="KSh 45,790">KSh 41,799</div><div class="tag _dsct">9%</div><div class="stk">38 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 97.43589743589743%,#c7c7cd 97.43589743589743%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/htc3268s32-inch-smart-android-tv-inbuilt-wifinetflixyoutubefree-gifts-vitron-mpg330573.html" data-id="VI505EA1AUSHINAFAMZ" data-name="HTC3268S,32 Inch Smart Android TV Inbuilt WIFI,Netflix,Youtube+FREE GIFTS" data-price="134.01" data-brand="Vitron" data-category="Electronics/Television &amp; Video/Televisions/Smart TVs" data-dimension23="17058" data-dimension26="242" data-dimension27="4.3" data-dimension28="0" data-dimension37="0" data-dimension43="Boost|CP_MT100|CP_MT31|CP_MT50|CP_MT56|CP_MT94|INF_55|TBOOST|TW22|TW_03|UND_6|UND_8" data-dimension44="0" data-position="13" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/78/698934/1.jpg?8048" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="Vitron HTC3268S,32 Inch Smart Android TV Inbuilt WIFI,Netflix,Youtube+FREE GIFTS"><div class="name">Vitron HTC3268S,32 Inch Smart Android TV Inbuilt WIFI,Netflix,Youtube+FREE GIFTS</div><div class="prc" data-oprc="KSh 25,000">KSh 16,899</div><div class="tag _dsct">32%</div><div class="stk">157 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 86.74033149171271%,#c7c7cd 86.74033149171271%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/43-frameless-full-hd-android-tv-netflix-youtube-43s65-tcl-mpg341810.html" data-id="TC187EA0DU1UUNAFAMZ" data-name="43'' FRAMELESS FULL HD ANDROID TV, NETFLIX, YOUTUBE 43S65" data-price="301.34" data-brand="TCL" data-category="Electronics/Television &amp; Video/Televisions/Smart TVs" data-dimension23="86761" data-dimension26="1" data-dimension27="5" data-dimension28="0" data-dimension37="0" data-dimension43="TBOOST|TW22|TW_03" data-dimension44="0" data-position="14" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/23/237094/1.jpg?0026" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="TCL 43'' FRAMELESS FULL HD ANDROID TV, NETFLIX, YOUTUBE 43S65"><div class="name">TCL 43'' FRAMELESS FULL HD ANDROID TV, NETFLIX, YOUTUBE 43S65</div><div class="prc" data-oprc="KSh 48,000">KSh 38,000</div><div class="tag _dsct">21%</div><div class="stk">20 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 100%,#c7c7cd 100%);"></div></div></a></article></div><div class="itm col"><article class="prd _box _hvr"><a class="core" href="/htc3268s32-inch-smart-android-tvnetflixyoutubewallbracket-vitron-mpg353871.html" data-id="VI505EA03GZKBNAFAMZ" data-name="HTC3268S,32 Inch Smart Android Tv,Netflix,Youtube,+Wallbracket" data-price="120.53" data-brand="Vitron" data-category="Electronics/Television &amp; Video/Televisions/Smart TVs" data-dimension23="91095" data-dimension26="5" data-dimension27="4.6" data-dimension28="0" data-dimension37="0" data-dimension43="CP_MT67|CP_MT94|TBOOST|TW22|TW_03" data-dimension44="0" data-position="15" data-list="flashsale_1" data-track-onclick="eecProduct" data-track-onview="eecProduct" data-track-onclick-bound="true"><img data-lazy="" data-src="https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/05/831435/1.jpg?1080" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img" width="185" height="185" alt="Vitron HTC3268S,32 Inch Smart Android Tv,Netflix,Youtube,+Wallbracket"><div class="name">Vitron HTC3268S,32 Inch Smart Android Tv,Netflix,Youtube,+Wallbracket</div><div class="prc" data-oprc="KSh 30,000">KSh 15,199</div><div class="tag _dsct">49%</div><div class="stk">181 items left<div class="meter _s" style="background-image:linear-gradient(to right,#f6b01e 100%,#c7c7cd 100%);"></div></div></a></article></div></div><button type="button" class="c-btn _prev _dis"><svg viewBox="0 0 24 24" class="ic" width="24" height="24"><use xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.ffb2c8f5.svg#arrow-left"></use></svg></button><button type="button" class="c-btn _next"><svg viewBox="0 0 24 24" class="ic" width="24" height="24"><use xlink:href="https://www.jumia.co.ke/assets_he/images/i-icons.ffb2c8f5.svg#arrow-right"></use></svg></button></div></section></div>
+</body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maathai | login</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec98d1f9a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js" async
+        integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx"
+        crossorigin="anonymous">
+        
+</script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="./firebase.js"></script>
+    <script src="./login.js"></script>
+
+</head>
+<body class="relative py-20 bg-gray-100">
+    <img class="hidden lg:block absolute top-0 left-0 mt-16" src="zeus-assets/icons/dots/blue-dot-left-bars.svg" alt="" data-removed="true">
+    <img class="hidden lg:block absolute bottom-0 right-0 mb-20" src="zeus-assets/icons/dots/yellow-dot-right-shield.svg" alt="" data-removed="true">
+    <div class="container px-4 mx-auto">
+      <div class="max-w-md mx-auto py-6 lg:py-12 px-4 lg:px-8 bg-white border rounded-xl text-center">
+        <div class="flex items-center justify-center">
+        <img src="https://i.ibb.co/R3cXh1j/Copy-of-Modern-Gradient-Brand-Logo-7.png" alt="" class="w-40 h-full object-contain">
+    </div>
+    <div class="flex items-center justify-center">
+        <h3 class="mb-12 text-3xl font-semibold font-heading cursor-pointer flex font-bold p-2">Sign   in to your account</h3>
+    </div>
+        <form action="#">
+          <div class="relative flex flex-wrap mb-6">
+            <input class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded" type="email" id="email" placeholder="e.g jeff@jmworlds.com">
+            <span class="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-white text-gray-500 text-xs">Your email address</span>
+          </div>
+          <div class="relative flex flex-wrap mb-6">
+            <input class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border rounded" type="password"  id="password" placeholder="******">
+            <span class="absolute top-0 left-0 ml-4 -mt-2 px-1 inline-block bg-white text-gray-500 text-xs">Password</span>
+          </div>
+          <button  onclick="login()"  class="w-full inline-block py-4 mb-4 text-sm text-white font-medium leading-normal rounded transition duration-200 bg-yellow-500">Get Started</button>
+          <a class="block pb-6 mb-6 text-sm font-semibold hover:underline border-b" href="#">Forgot password?</a>
+          <p class="text-sm text-gray-500">
+            <span>Are you a new user?</span>
+            <a class="text-red-400 font-semibold hover:underline" href="signup.html?#">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+</body>
